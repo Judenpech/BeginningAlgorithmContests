@@ -2,14 +2,12 @@
 #include <cstring>
 using namespace std;
 int main(){
-	char a[]={'1','S','E','0','Z','0','0','8','0','A','0','0','0','3','0','0','H','I','L','0','J','M','0','O','0','0','0','2','T','U','V','W','X','Y','5'};
-
+	char a[]={"1SE0Z0080A000300HIL0JM0O0002TUVWXY5"};
 	int f1,f2;
-	while(1){
-		char s[1000];
+	char s[25];
+	while(scanf("%s", s)==1){
 		f1=1;f2=1;
-		gets(s);
-		for(int i=0,j=strlen(s)-1;i<strlen(s)/2;i++,j--){
+		for(int i=0,j=strlen(s)-1;i<=strlen(s)/2;i++,j--){
 			if(s[i]!=s[j]){
 				f1=0;
 			}
@@ -24,6 +22,7 @@ int main(){
 		if(f1 && !f2) cout<<s<<" -- is a regular palindrome."<<endl;
 		if(f2 && !f1) cout<<s<<" -- is a mirrored string."<<endl;
 		if(!f1 && !f2) cout<<s<<" -- is not a palindrome."<<endl;
+		cout<<endl;
 	}
 	return 0;
 }
