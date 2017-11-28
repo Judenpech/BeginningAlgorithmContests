@@ -1,66 +1,69 @@
 #include <iostream>
 #include <cstring>
 #include <ctype.h>
-#define maxn 105
+#define maxn 85
 using namespace std;
+
 double f(char a,int b){
 	double cnt=0;
 	switch(a){
-				case 'C':{
-					cnt+=12.01*b;
-					break;
-				}
-				case 'H':{
-					cnt+=1.008*b;
-					break;
-				}
-				case 'O':{
-					cnt+=16.00*b;
-					break;
-				}
-				case 'N':{
-					cnt+=14.01*b;
-					break;
-				}
-			}
+		case 'C':{
+			cnt+=12.01*b;
+			break;
+		}
+		case 'H':{
+			cnt+=1.008*b;
+			break;
+		}
+		case 'O':{
+			cnt+=16.00*b;
+			break;
+		}
+		case 'N':{
+			cnt+=14.01*b;
+			break;
+		}
+	}
 	return cnt;
 }
 int main(){
-	char a[maxn];
+	char a[maxn],m;
 	double cnt=0;
-	char m;
-	int n,cntn;
-	gets(a);
-	for(int i=0;i<strlen(a);){		
-		n=0,cntn=1;
-		if(isalpha(a[i])){
-			m=a[i];
-			for(int j=i+1;j<strlen(a);j++){
-				if(isalpha(a[j]) || a[j]=='\0'){
-					break;
+	int t,p;
+	cin>>t;
+	getchar();
+	while(t--){
+		cnt=0,p=0;
+		gets(a);
+		for(int i=0;i<strlen(a);i++){
+			if(isdigit(a[i])){
+				if(p==0){
+					p+=a[i]-48;
+				}else{
+					p=p*10+(a[i]-48);
 				}
-				if(isdigit(a[j]) && isdigit(a[j+1])){
-					n=(n+(a[j]-48))*10;
-					cntn++;
-				}else if(isdigit(a[j]) && isalpha(a[j+1])){
-					n+=(a[j]-48);
-					cntn++;
-					break;
-				}else if(isdigit(a[j]) && a[j+1]=='\0'){
-					n+=(a[j]-48);
-					cntn++;
-					break;
+				if(a[i+1]=='\0'){
+					cnt+=f(m,p);
 				}
 			}
-			if(cntn>1){
-				cnt+=f(m,n);
-				i=i+cntn;
-			}else{
-				cnt+=f(m,1);
-				i++;
-			} cout<<i<<endl;
+			if(isalpha(a[i])){
+				if(p!=0){
+					cnt+=f(m,p);
+					p=0;
+					m=a[i];
+					if(isalpha(a[i+1]) || a[i+1]=='\0'){
+						cnt+=f(m,1);
+					}
+				}
+				else{
+					m=a[i];
+					if(isalpha(a[i+1]) || a[i+1]=='\0'){
+						cnt+=f(m,1);
+					}
+				} 
+			}
 		}
+		printf("%.3lf\n",cnt);
 	}
-	cout<<cnt<<endl;
 	return 0;
 }
