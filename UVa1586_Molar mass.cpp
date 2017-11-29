@@ -36,34 +36,21 @@ int main(){
 		cnt=0,p=0;
 		gets(a);
 		for(int i=0;i<strlen(a);i++){
-			if(isdigit(a[i])){
-				if(p==0){
-					p+=a[i]-48;
-				}else{
-					p=p*10+(a[i]-48);
-				}
-				if(a[i+1]=='\0'){
-					cnt+=f(m,p);
-				}
-			}
 			if(isalpha(a[i])){
-				if(p!=0){
-					cnt+=f(m,p);
-					p=0;
-					m=a[i];
-					if(isalpha(a[i+1]) || a[i+1]=='\0'){
-						cnt+=f(m,1);
+				if(isdigit(a[i+1])){
+					if(isdigit(a[i+2])){
+						p=(a[i+1]-48)*10+(a[i+2]-48);
 					}
+					else{
+						p=(a[i+1]-48);
+					}
+				}else if(isalpha(a[i+1]) || a[i+1]=='\0'){
+					p=1;
 				}
-				else{
-					m=a[i];
-					if(isalpha(a[i+1]) || a[i+1]=='\0'){
-						cnt+=f(m,1);
-					}
-				} 
+				cnt+=f(a[i],p);
 			}
 		}
-		printf("%.3lf\n",cnt);
+		printf("%.3f\n",cnt);
 	}
 	return 0;
 }
