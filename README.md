@@ -1,6 +1,6 @@
 # Beginning Algorithm Contests
 
-Beginning Algorithm Contests Exercise Solutions
+Exercise Solutions.
 
 ### Online Judge
 
@@ -11,6 +11,8 @@ Listed in no particular order.
 - [EL Judge(MIPT)](http://acm.mipt.ru/judge/problems.pl)
 - [USACO](http://train.usaco.org/usacogate)
 - [SPOJ](http://www.spoj.com/)
+- [PAT](https://www.patest.cn/contests)
+- [VJudge](https://vjudge.net/problem#OJId=All&probNum=&title=&source=&category=all)
 - [南阳理工学院（NYIST）](http://acm.nyist.net/JudgeOnline/problemset.php)
 - [浙江中医药大学（ZCMU）](http://acm.zcmu.edu.cn/JudgeOnline/problemset.php)
 - [浙江大学（ZJU）](http://acm.zju.edu.cn/onlinejudge/showProblemsets.do)
