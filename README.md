@@ -16,7 +16,7 @@ Listed in no particular order.
 - [浙江大学（ZJU）](http://acm.zju.edu.cn/onlinejudge/showProblemsets.do)
 - [北京大学（PKU）](http://acm.pku.edu.cn/JudgeOnline/)
 - [同济大学（TJU）](http://acm.tongji.edu.cn/problemset.php)
-- [杭州电子科技大学(HDU)](http://acm.hdu.edu.cn/)
+- [杭州电子科技大学（HDU）](http://acm.hdu.edu.cn/)
 - [浙江工商（ZJGSU）](http://acm.zjgsu.edu.cn/)
 - [中国科技大学（USTC）](http://acm.ustc.edu.cn/ustcoj/problemlist.php)
 - [武汉大学（WHU）](http://acm.whu.edu.cn/olive/problems)
