@@ -7,7 +7,7 @@ Beginning Algorithm Contests Exercise Solutions
 Listed in no particular order.
 
 - [瓦拉杜利德大学(UVa)](https://uva.onlinejudge.org/)
-- [乌拉尔大学（URAL）](http://acm.timus.ru/)
+- [乌拉尔大学(URAL)](http://acm.timus.ru/)
 - [EL Judge(MIPT)](http://acm.mipt.ru/judge/problems.pl)
 - [USACO](http://train.usaco.org/usacogate)
 - [SPOJ](http://www.spoj.com/)
