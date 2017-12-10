@@ -1,4 +1,4 @@
-//B
+//E
 #include <iostream>
 using namespace std;
 char a[]={"1000101021"};
@@ -10,7 +10,7 @@ int main(){
 		cin>>n;
 		while(n){
 			x=n%10;
-			sum+=(a[x]-48);//cout<<a[x];
+			sum+=(a[x]-48);
 			n/=10;
 		}
 		
