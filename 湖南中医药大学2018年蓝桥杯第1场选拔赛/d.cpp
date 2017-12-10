@@ -1,4 +1,5 @@
-//d
+//D
+// WA
 #include <iostream>
 #include <cstring>
 #include <ctype.h>
