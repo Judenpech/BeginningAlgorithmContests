@@ -18,28 +18,26 @@ int main(){
 		memset(b,0,sizeof(b));
 		memset(c,0,sizeof(c));
 		init(ta,a);init(tb,b);init(tc,c);
-		for(int i=3;i<=100;i++){
+		for(int i=3;i<100;i++){
 			memset(sum,0,sizeof(sum));
 			for(int j=maxn-1;j>=0;j--){
-				sum[j]+=a[j]+b[j]+c[j];
-				//if(sum[j]!=0)cout<<sum[j]<<endl;
+				sum[j]+=(a[j]+b[j]+c[j]);
 				if(sum[j]>9){
-					sum[j-1]/=10;
-					sum[j]%=10;
+					sum[j-1]=sum[j]/10;
+					sum[j]=sum[j]%10;
 				}
 			}
-			memcpy(a,b,sizeof(b));
+			memcpy(a,b,sizeof(b));			
 			memcpy(b,c,sizeof(c));
 			memcpy(c,sum,sizeof(sum));
-
 		}
 		int flag=0;
 		for(int i=0;i<maxn;i++){
-			if(c[i]!=0){
+			if(sum[i]!=0){
 				flag=1;
 			}
 			if(flag){
-				cout<<c[i];
+				cout<<sum[i];
 			}
 		}
 		cout<<endl;
