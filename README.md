@@ -22,8 +22,8 @@ Listed in no particular order.
 - [codefights.com](https://codefights.com/)
 - [lintcode.com](http://www.lintcode.com/en/)
 - [Google Code Jam](https://code.google.com/codejam/)
-- [Facebook Hacker Cup]()
-- [ACM 国际大学生程序设计竞赛]()
+- [Facebook Hacker Cup](https://www.facebook.com/hackercup/)
+- [ACM International Collegiate Programming Contest](https://icpc.baylor.edu/)
 
 ### Online Judge
 
