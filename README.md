@@ -2,6 +2,29 @@
 
 Exercise Solutions.
 
+### Website
+
+Listed in no particular order.
+
+- [TopCoder](https://www.topcoder.com/)
+- [Coderbyte](https://www.coderbyte.com/)
+- [Project Euler](https://projecteuler.net/)
+- [HackerRank](https://www.hackerrank.com/)
+- [CodeChef](https://www.codechef.com/)
+- [CodeEval](https://codeeval.com/)
+- [Codewars](https://www.codewars.com/)
+- [LeetCode](https://leetcode.com/)
+- [CodinGame](https://www.codingame.com/)
+- [Codeforces](http://codeforces.com/)
+- [HackerEarth](https://www.hackerearth.com/zh/)
+- [atcoder.jp](http://atcoder.jp/)
+- [hihocoder.com](http://www.hihocoder.com/)
+- [codefights.com](https://codefights.com/)
+- [lintcode.com](http://www.lintcode.com/en/)
+- [Google Code Jam](https://code.google.com/codejam/)
+- [Facebook Hacker Cup]()
+- [ACM 国际大学生程序设计竞赛]()
+
 ### Online Judge
 
 Listed in no particular order.
