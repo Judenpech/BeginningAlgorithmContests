@@ -2,7 +2,7 @@
 
 Exercise Solutions.
 
-### Website
+### Websites
 
 Listed in no particular order.
 
