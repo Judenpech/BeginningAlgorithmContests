@@ -40,6 +40,7 @@ int main(){
 				cout<<sum[i];
 			}
 		}
+		if(flag==0) cout<<0;  //输入为0 0 0的情况 
 		cout<<endl;
 	}
 	return 0;
