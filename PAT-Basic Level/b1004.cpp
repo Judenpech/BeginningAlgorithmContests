@@ -1,31 +1,27 @@
 #include <iostream>
+#include <string.h>
+
 using namespace std;
 
 int main(){
 	int n;
 	cin>>n;
-	string tname,tno;
-	string maxname,minname,maxno,minno;
-	int tscore,maxscore,minscore;
-	cin>>tname>>tno>>tscore;
-	maxname=minname=tname;
-	maxno=minno=tno;
-	maxscore=minscore=tscore;
-	n--;
+	char maxSName[10],maxSId[10],minSName[10],minSId[10],name[10],id[10];
+	int grade,maxG=0,minG=100;
 	while(n--){
-		cin>>tname>>tno>>tscore;
-		if(tscore>maxscore){
-			maxname=tname;
-			maxno=tno;
-			maxscore=tscore;
-		}
-		if(tscore<minscore){
-			minname=tname;
-			minno=tno;
-			minscore=tscore;
-		}
+		cin>>name>>id>>grade;
+		if(grade>maxG){
+			maxG=grade;
+			strcpy(maxSName,name);
+			strcpy(maxSId,id);
+		} 
+		if(grade<minG){
+			minG=grade;
+			strcpy(minSName,name);
+			strcpy(minSId,id);
+		} 
 	}
-	cout<<maxname<<" "<<maxno<<endl;
-	cout<<minname<<" "<<minno<<endl;
+	cout<<maxSName<<" "<<maxSId<<endl;
+	cout<<minSName<<" "<<minSId<<endl;
 	return 0;
-}
+} 
