@@ -29,21 +29,25 @@ int gcd(long long a,long long b){//求最大公约数
 
 int main(){
 	int n;
-	long long a[maxn]={0},b[maxn]={0},c[3]={0},fenMu; //a分子，b分母，结果:c[0]分子，c[1]分母，c[2]整数部分
+	long long r,a[maxn]={0},b[maxn]={0},c[3]={0},fenMu; //a分子，b分母，结果:c[0]分子，c[1]分母，c[2]整数部分
 	cin>>n;
 	for(int i=0;i<n;i++){
 		scanf("%lld/%lld",&a[i],&b[i]);
-		if(a[i]!=0 && b[i]!=0) fenMu=lcm(b[i]);
+		if(a[i]!=0 && b[i]!=0){
+			r=gcd(abs(a[i]),b[i]);
+			a[i]/=r;
+			b[i]/=r;
+			fenMu=lcm(b[i]);
+		} 
 	}
 	for(int i=0;i<n;i++){
 		if(a[i]!=0 && b[i]!=0){
-   			a[i]=a[i]*(fenMu/b[i]);
-			c[0]+=a[i];
+			c[0]+=a[i]*(fenMu/b[i]);
 		}
 	}
-	if(c[0]==0) cout<<"0";
+	if(c[0]==0) cout<<"0"<<endl;
 	else{
-		long long r=gcd(abs(c[0]),fenMu);
+		r=gcd(abs(c[0]),fenMu);
 		c[1]=fenMu/r;
 		c[2]=c[0]/fenMu;
 		if(c[0]<0) c[0]=c[0]/r+abs(c[2])*c[1];
