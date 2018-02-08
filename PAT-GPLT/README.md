@@ -2,9 +2,8 @@
 
 [传送门](https://www.patest.cn/contests/gplt)
 
----
 
-### 完成情况
+## 完成情况
 
 |标号|通过|
 |---|---|
