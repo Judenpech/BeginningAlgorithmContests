@@ -8,7 +8,6 @@ Here is my exercise solutions
 - [PAT (Basic Level) Practise （中文）]()
 - [蓝桥杯](https://github.com/jl223vy/LANQIAO/blob/master/README.md)
 
------
 
 ## Websites
 
