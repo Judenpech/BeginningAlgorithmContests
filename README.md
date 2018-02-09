@@ -1,8 +1,16 @@
 # Beginning Algorithm Contests
 
-Exercise Solutions.
+Here is my exercise solutions
 
-### Websites
+## Contents
+
+- [中国高校计算机大赛-团体程序设计天梯赛(CCCC-GPLT)](https://github.com/jl223vy/BeginningAlgorithmContests/tree/master/PAT-GPLT)
+- [PAT (Basic Level) Practise （中文）]()
+- [蓝桥杯](https://github.com/jl223vy/LANQIAO/blob/master/README.md)
+
+-----
+
+## Websites
 
 Listed in no particular order.
 
@@ -25,7 +33,7 @@ Listed in no particular order.
 - [Facebook Hacker Cup](https://www.facebook.com/hackercup/)
 - [ACM International Collegiate Programming Contest](https://icpc.baylor.edu/)
 
-### Online Judge
+## Online Judge
 
 Listed in no particular order.
 
