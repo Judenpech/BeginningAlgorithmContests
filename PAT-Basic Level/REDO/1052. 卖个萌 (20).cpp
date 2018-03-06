@@ -1,46 +1,39 @@
 #include <iostream>
 #include <string>
 #include <cstring>
+#include <vector>
 using namespace std;
 
-int input(string a[]){
-	string str;
-	getline(cin,str);
-	int len=0;
-	for(int i=0;i<str.length();i++){
-		if(str[i]=='['){
-			while(str[++i]!=']'){
-				a[len]+=str[i];
-			}
-			len++;
-		}
-	}
-	return len;
-}
 int main(){
-	string shou[15],yan[15],kou[15];
-	int p[5];
-	int lens=0,leny=0,lenk=0;
-	lens=input(shou);
-	leny=input(yan);
-	lenk=input(kou);
+	string s;
+	vector<vector<string> > v;
+	for(int i=0;i<3;i++){
+		getline(cin,s);
+		vector<string> row;
+		int j=0,k=0;
+		while(j<s.length()){
+			if(s[j]=='['){
+				while(k++<s.length()){
+					if(s[k]==']'){
+						row.push_back(s.substr(j+1,k-j-1));
+						break;
+					}
+				}
+			}
+			j++;
+		}
+		v.push_back(row);
+	}
+	int p[8];
 	int k;
 	cin>>k;
 	while(k--){
 		for(int i=0;i<5;i++) cin>>p[i];
-		if(p[0]>lens || p[4]>lens){
+		if(p[0]>v[0].size() || p[4]>v[0].size() || p[1]>v[1].size() || p[3]>v[1].size() || p[2]>v[2].size() || p[0]<1 || p[1]<1 || p[2]<1 || p[3]<1 || p[4]<1){
 			cout<<"Are you kidding me? @\\/@"<<endl;
 			continue;
 		}
-		if(p[1]>leny || p[3]>leny){
-			cout<<"Are you kidding me? @\\/@"<<endl;
-			continue;
-		}
-		if(p[2]>lenk){
-			cout<<"Are you kidding me? @\\/@"<<endl;
-			continue;
-		}
-		cout<<shou[p[0]-1]<<yan[p[1]-1]<<kou[p[2]-1]<<yan[p[3]-1]<<shou[p[4]-1]<<endl;
+		cout<<v[0][p[0]-1]<<"("<<v[1][p[1]-1]<<v[2][p[2]-1]<<v[1][p[3]-1]<<")"<<v[0][p[4]-1]<<endl;
 	}
 	return 0;
 }
