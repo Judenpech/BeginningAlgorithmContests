@@ -15,16 +15,14 @@ int main(){
 	gets(s2);
 	for(int i=0;i<strlen(s1);i++){
 		b[s1[i]]=1;
-		b[tolower(s1[i])]=1;
+		if(isupper(s1[i])) b[tolower(s1[i])]=1;
 	}
 	for(int i=0;i<strlen(s2);i++){
 		if(isupper(s2[i]) && b[43]==1) continue;
 		if(b[s2[i]]==0){
 			s+=s2[i];
-			//cout<<s2[i];
 		}
 	}
 	cout<<s<<endl;
-	//cout<<endl;
 	return 0;
 }
