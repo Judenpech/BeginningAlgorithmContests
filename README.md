@@ -2,7 +2,7 @@
 
 Here are my exercise solutions.
 
-## Contents
+## Content
 
 - [中国高校计算机大赛-团体程序设计天梯赛(CCCC-GPLT)](https://github.com/jl223vy/BeginningAlgorithmContests/blob/master/PAT-GPLT/README.md)
 - [PAT (Basic Level) Practise （中文）](https://github.com/jl223vy/BeginningAlgorithmContests/tree/master/PAT-Basic%20Level)
