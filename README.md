@@ -1,6 +1,6 @@
 # Beginning Algorithm Contests
 
-Here are my exercise solutions.
+程序设计竞赛练习题解
 
 ## Content
 
