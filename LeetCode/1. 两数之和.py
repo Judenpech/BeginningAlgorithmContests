@@ -13,6 +13,38 @@ class Solution:
                     return i,j
                     break
  
+def stringToIntegerList(input):
+    return json.loads(input)
+
+def integerListToString(nums, len_of_list=None):
+    if not len_of_list:
+        len_of_list = len(nums)
+    return json.dumps(nums[:len_of_list])
+
+def main():
+    import sys
+    def readlines():
+        for line in sys.stdin:
+            yield line.strip('\n')
+
+    lines = readlines()
+    while True:
+        try:
+            line = next(lines)
+            nums = stringToIntegerList(line);
+            line = next(lines)
+            target = int(line);
+            
+            ret = Solution().twoSum(nums, target)
+
+            out = integerListToString(ret);
+            print(out)
+        except StopIteration:
+            break
+
+if __name__ == '__main__':
+    main()
+
 
 # 一遍哈希       
 class Solution:
@@ -30,3 +62,35 @@ class Solution:
                 return d[nums[i]],i
             else:
                 d[t]=i
+
+def stringToIntegerList(input):
+    return json.loads(input)
+
+def integerListToString(nums, len_of_list=None):
+    if not len_of_list:
+        len_of_list = len(nums)
+    return json.dumps(nums[:len_of_list])
+
+def main():
+    import sys
+    def readlines():
+        for line in sys.stdin:
+            yield line.strip('\n')
+
+    lines = readlines()
+    while True:
+        try:
+            line = next(lines)
+            nums = stringToIntegerList(line);
+            line = next(lines)
+            target = int(line);
+            
+            ret = Solution().twoSum(nums, target)
+
+            out = integerListToString(ret);
+            print(out)
+        except StopIteration:
+            break
+
+if __name__ == '__main__':
+    main()
