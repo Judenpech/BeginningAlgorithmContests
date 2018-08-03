@@ -1,8 +1,6 @@
 # 中国高校计算机大赛-团体程序设计天梯赛(CCCC-GPLT)
 
-- [团体程序设计天梯赛-练习集](https://www.patest.cn/contests/gplt)
-
-- [代码](https://github.com/jl223vy/BeginningAlgorithmContests/tree/master/PAT-GPLT)
+- [题解代码](https://github.com/jl223vy/BeginningAlgorithmContests/tree/master/PAT-GPLT)
 
 ### 完成情况
 
